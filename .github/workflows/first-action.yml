@@ -5,3 +5,12 @@ name: First Workflow
 # Controls when the workflow will run
 on: workflow_dispatch
   
+jobs:
+  fitst-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world!"
+      - name: Print bye
+        run: echo "Done - goodbye"
+      
